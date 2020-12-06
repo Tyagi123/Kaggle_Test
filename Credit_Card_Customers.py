@@ -59,7 +59,7 @@ y_test = torch.squeeze(torch.from_numpy(y_test.to_numpy()).float())
 print(X_train.shape, y_train.shape)
 print(X_test.shape, y_test.shape)
 
-model=CreditCardNN(X_train.shape[1],10,10,1)
+model=CreditCardNN(X_train.shape[1],13,13,1)
 criterion = nn.BCELoss()
 from torch import nn, optim
 
